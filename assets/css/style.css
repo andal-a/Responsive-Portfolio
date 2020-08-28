@@ -82,6 +82,11 @@ nav a {
     color: white;
     text-decoration: none;
     border-left: 1px solid #efefef;
+
+}
+
+nav a:hover {
+    color: #e48d8d;
 }
   
 nav a:first-child {
