@@ -4,7 +4,7 @@ body {
     text-align: justify;
     line-height: 34px;
     color: #777;
-    background: url("../images/ricepaper.png");
+    background: url("../images/Cherry-Blossoms-Vector.png");
 }
   
 * {
@@ -13,21 +13,22 @@ body {
 
 /*General*/
 
-.container {
-    width: 100%;
+.container-fluid {
+    width: 70%;
     max-width: 960px;
     margin: 0 auto;
     clear: both;
 }
   
 h1, h2, h3, p {
+    text-align: center;
     margin-bottom: 20px;
 }
   
 h1, h2, h3 {
     font-family: Georgia, Times, "Times New Roman", serif;
     font-weight: 700;
-    color: #4aaaa5;
+    color: #e48d8d;
 }
   
 h1 {
@@ -50,13 +51,13 @@ h2, h3 {
     margin: 0 0 30px;
     overflow: auto;
     color: #fff;
-    background: #fff;
+    background: #e9abab;
     border-bottom: 2px solid #ccc;
 }
   
 #logo {
     float: left;
-    width: 300px;
+    width: 50%;
     height: 90px;
     font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 30px;
@@ -65,7 +66,7 @@ h2, h3 {
     color: #fff;
     text-align: center;
     text-decoration: none;
-    background: #4aaaa5;
+    background: #e48d8d;
 }
   
 nav {
@@ -78,7 +79,7 @@ nav a {
     padding-left: 15px;
     margin-left: 15px;
     line-height: 18px;
-    color: #999;
+    color: white;
     text-decoration: none;
     border-left: 1px solid #efefef;
 }
@@ -86,6 +87,18 @@ nav a {
 nav a:first-child {
     border-left: 0 none;
 }
+
+.btn {
+    background-color: #e48d8d;
+    border-color: #e48d8d;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #e6c6c6;
+    border-color: #e48d8d;
+}
+
 
 /*Footer*/
 
@@ -96,8 +109,8 @@ footer {
     color: #fff;
     color: #ccc;
     text-align: center;
-    background: #666;
-    border-top: 8px solid #4aaaa5;
+    background: #e48d8d;
+    border-top: 8px solid #e9abab;
 }
 
 /*Sidebar*/
@@ -105,7 +118,7 @@ footer {
 .sidebar {
     float: right;
     width: 100%;
-    max-width: 270px;
+    max-width: 25%;
     padding: 30px;
     margin-bottom: 20px;
     background: #fff;
@@ -144,7 +157,7 @@ h3, .sidebar, h2 {
 .main-section {
     float: left;
     width: 100%;
-    max-width: 650px;
+    max-width: 70%;
     padding: 30px;
     margin: 0 0 40px;
     background: #fff;
@@ -160,28 +173,20 @@ h3, .sidebar, h2 {
 }
 
 /* Portfolio */
-.port-image { 
-    width: 100%;
-    height: 100%;
-    margin-top: 10px;
-    float: left;
-    margin-right: inherit;
+
+.card-columns {
+    @include media-breakpoint-only(lg) {
+      column-count: 2;
+    }
+    @include media-breakpoint-only(xl) {
+      column-count: 3;
+    }
 }
 
-.thumbnail {
-    position: relative;
-    margin-bottom: 40px;
-    cursor: pointer;
-    transition: all .8s ease;
-}
 
 /*Image enlarges when cursor hovers over it*/
-.thumbnail:hover {
+.card-img-top:hover {
     transform: scale(1.1);
-}
-
-.thumbnail img {
-    max-width: 270px;
 }
 
 /*Creates photo row and columns*/
@@ -219,47 +224,19 @@ h3, .sidebar, h2 {
     text-align: center;
     color: white;
     font-size: 1.2em;
-    background-color: rgba(74, 170, 165, .7);
+    background-color: rgb(196, 196, 196);
 }
 
-/* Contact */
-  
-#contact-form ul {
-    margin-bottom: 20px;
-}
-  
-#contact-form li {
-    margin-bottom: 10px;
-}
-  
-label, input[type=text], input[type=email], textarea {
-    display: block;
-    width: 100%;
-}
-  
-input[type=text], input[type=email], textarea {
-    height: 35px;
-    padding: 0 10px;
-    font-size: 14px;
-    border: 1px solid #ddd;
-}
-  
-textarea {
-    height: 200px;
-}
-  
-input[type=submit] {
-    padding: 10px 30px;
-    font-size: 18px;
-    color: #fff;
-    cursor: pointer;
-    background: #4aaaa5;
-    border: 0 none;
-}
+/*Resume*/
+
 
 /* Set breakpoints at 980px, 768px, and 640px screen widths */
 
-@media only screen and (min-width: 980px) {
+@media (min-width: 1200px) {
+
+    .container-fluid {
+        max-width: 70%;
+    }
     
   
     .profilepic {
@@ -276,11 +253,13 @@ input[type=submit] {
       float: none;
       width: 100%;
     }    
+
+
 }
   
 @media only screen and (max-width: 979px) and (min-width: 768px) {
-    .container {
-      max-width: 700px;
+    .container-fluid {
+      max-width: 100%;
     }
   
     body { 
@@ -293,7 +272,7 @@ input[type=submit] {
     }
   
     .main-section {
-        max-width: 100%
+        max-width: 100%;
     }
   
     .profilepic {
@@ -303,8 +282,8 @@ input[type=submit] {
 }
 
 @media only screen and (max-width: 767px) and (min-width: 640px) {
-    .container {
-        max-width: 600px;
+    .container-fluid {
+        max-width: 70%;
     }
   
     body {
@@ -317,7 +296,8 @@ input[type=submit] {
     }
   
     .main-section {
-        max-width: 100%
+        max-width: 100%;
+
     }  
   
     .profilepic {
@@ -329,8 +309,8 @@ input[type=submit] {
 }
 
 @media only screen and (max-width: 639px) {
-    .container {
-      max-width: 500px;
+    .container-fluid{
+      max-width: 70%;
     }
 
     .column {
@@ -345,8 +325,6 @@ input[type=submit] {
   
     .main-section {
         max-width: 100%;
-        margin-right: 15px;
-        margin-left: 15px;
     } 
   
     #logo {
@@ -366,13 +344,6 @@ input[type=submit] {
         margin: auto;
     }
   
-    nav a {
-        width: 33.3%;
-        float: left;
-        padding: 15px 0px 15px 0px;
-        margin: 0px;
-    }
-  
     h1 {
         font-size: 24px;
         padding-bottom: 0px;
@@ -388,14 +359,12 @@ input[type=submit] {
     }
 
     .main-section {
-        padding: 20px;
-        width: calc(100% - 120px);
-        margin-left: 30px;
+        width: 100%;
     }
 
     .sidebar {
         max-width: 100%;
-        float: left;
+
     }
 
     #main-container {
@@ -403,8 +372,8 @@ input[type=submit] {
     }
   
     .profilepic {
-        width: 100%;
-        height: 100%;
+        width: fit-content;
+        height: fit-content;
     }
   
     .portfolio {
@@ -421,6 +390,7 @@ input[type=submit] {
 
     .thumbnail img {
         max-width: 100%;
+        color: #3d3232f3;
     }
 
     .label {
@@ -436,4 +406,9 @@ input[type=submit] {
         float: none;
     }
 
+    #card {
+        width: fit-content;
+    }
+
   }
+  
