@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-  <title>Amor Andal</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">  
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <title>Amor Andal</title>
 </head>
-
 <body>
     <header id="masthead">
         <div class="container">
@@ -19,93 +16,80 @@
             <nav>
                 <a href="index.html">About</a>
                 <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
+                <a href="resume.html">Resume</a>
             </nav>
         </div>
     </header>
-    
-    <div id="main-container" class="container">
-
+    <!--Main Body-->
+    <div id="main-container" class="container-fluid">
         <section class="main-section">
-
-            <h1>Portfolio</h1>
-            
-            <div id="column">
-                <div class="row">
-                    <div class="thumbnail">
-                        <img class="port-image" src="assets/images/pets.jpg" alt="A tortoiseshell cat">
-                        <span class="label">Fur Friends</span>
-                    </div> 
-                </div>
-                
-                <div class="row">
-                    <div class="thumbnail">
-                        <img class="port-image" src="assets/images/vinyl.jpg" alt="A record player">
-                        <span class="label">Record Collection</span>
-                    </div>
-                </div>
-                    
-                <div class="row">
-                    <div class="thumbnail">
-                        <img class="port-image" src="assets/images/latte.jpg" alt="A matcha latte with rosetta art">
-                        <span class="label">Latte Art</span> 
+            <div class="card">
+                <h1>Portfolio</h1>
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/images/reeferal.png" alt="Preview of cannabis referencing website">
+                        <div class="card-body">
+                            <h2>Reeferal Project</h2>
+                            <p class="card-text">An application for referencing the best cannabis strains according to user based preferences.</p>
+                            <p>
+                            <a href="https://github.com/analexander/Reeferal" class="btn btn-primary">Reeferal GitHub</a>
+                            </p>
+                            <p>
+                            <a href="https://analexander.github.io/Reeferal/" class="btn btn-primary">Get Your Reeferal</a>
+                            </p>
                         </div>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="thumbnail">
-                        <img class="port-image" src="assets/images/hospitality.jpg" alt="Amor training an employee">
-                        <span class="label">Hospitality</span>
+                    <div class="card">
+                        <img class="card-img-top" src="assets/images/quizimage.png" alt="Screenshot of JavaScript Quiz App">
+                        <div class="card-body">
+                            <h2>JavaScript Quiz</h2>
+                            <p class="card-text">An application built to test the user's knowledge of JavaScript.</p>
+                            <p>
+                            <a href="https://github.com/andal-a/JavaScript_Quiz" class="btn btn-primary">JavaScript Quiz GitHub</a>
+                            </p>
+                            <p>
+                            <a href="https://andal-a.github.io/JavaScript_Quiz/" class="btn btn-primary">Take the Quiz</a>
+                            </p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="thumbnail">
-                        <img class="port-image" src="assets/images/healthcare.jpg" alt="Hand pushing health-related icons on the screen">
-                        <span class="label">Healthcare</span>
-                    </div>
-                </div>
-
-                <div class="row">
-                        <div class="thumbnail">
-                            <img class="port-image" src="assets/images/show.jpg" alt="Amy from Amyl and the Sniffers singing into the crowd at a">
-                            <span class="label">Concerts</span>
+                    <div class="card">
+                        <img class="card-img-top" src="assets/images/passwordgenimg.png" alt="Screenshot of JavaScript Quiz App">
+                        <div class="card-body">
+                            <h2>Password Generator</h2>
+                            <p class="card-text">An application to generate passwords of varying strength based on the user's selected preferences.</p>
+                            <p>
+                            <a href="https://github.com/andal-a/Password_Generator" class="btn btn-primary">Password Generator GitHub</a>
+                            </p>
+                            <p>
+                            <a href="https://andal-a.github.io/Password_Generator/" class="btn btn-primary">Generate a Password</a>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
+        <!--Media Icons-->
         <section class="sidebar">
-
             <div class="connect">
-                
                 <h2>Connect with Me</h2>
-                
                 <a href="https://github.com/andal-a">
                     <img class="social" src="assets/images/github.png" alt="GitHub">
                 </a> 
-            
                 <a href="https://www.linkedin.com/in/amor-andal-93851a1ab/">
                     <img class="social" src="assets/images/linkedin.png" alt="LinkedIn">
                 </a>
-
-                <a href="https://www.instagram.com/ramblin__rose__/">
-                    <img class="social" src="assets/images/insta.png" alt="Instagram">
-                </a> 
-
             </div>
-            
         </section>
-    
     </div>
-
-    <footer>
-		<div class="container">
-            &copy; Copyright 2020 Amor Andal
-        </div>
-    </footer>	
-
+        <!--Footer-->
+        <footer>
+            <div class="container">
+                &copy; Copyright 2020 Amor Andal
+                <a href="https://www.vecteezy.com/free-vector/sakura-flower">Sakura Flower Vectors by Vecteezy</a>
+            </div>
+        </footer>	
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
